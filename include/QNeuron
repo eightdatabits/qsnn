@@ -1,0 +1,14 @@
+/* -*- mode: C++; tab-width: 4; -*- */
+
+/**
+ * @file QNeuron
+ *
+ * @brief This is an alias file which includes qneuron.hpp.
+ *
+ * @author      Liam Bucci
+ * @date        7/21/2013
+ */
+
+
+// Include qneuron.hpp
+#include <qneuron.hpp>

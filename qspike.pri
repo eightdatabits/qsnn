@@ -1,20 +1,22 @@
-## @file CarlLib.pri
-# @brief This file is used by qmake to include the CarlLib library in other QT applications.
-# @author {Liam Bucci}
-# @date {5/29/2012}
-# @project {Carl Platform}
-# @subproject {CarlComm}
-# @version {0.2.0}
+## @file qspike.pri
+# @brief This file is used by qmake to include the qspike library in other QT applications.
+# @author       Liam Bucci
+# @date         7/24/2013
 #
-# @note Requires the variable CARLLIB_DIR be set by the including .pro file.
+# @note The variable QSPIKE_ROOT must define the path (either absolute or relative from the main .pro file) to the root folder of the qspike library.
 #
 
-INCLUDEPATH += $${CARLLIB_DIR} \
-               $${CARLLIB_DIR}/qt
 
-SOURCES += $${CARLLIB_DIR}/qt/carlmessage.cpp \
-           $${CARLLIB_DIR}/qt/carlinterface.cpp
+INCLUDEPATH += $${QSPIKE_ROOT}/include
 
-HEADERS += $${CARLLIB_DIR}/qt/carlmessage.hpp \
-           $${CARLLIB_DIR}/qt/carlinterface.hpp \
-           $${CARLLIB_DIR}/CarlComm
+SOURCES += $${QSPIKE_ROOT}/source/qneuron.cpp \
+           $${QSPIKE_ROOT}/source/qsynapse.cpp
+
+HEADERS += $${QSPIKE_ROOT}/include/QNeuron \
+           $${QSPIKE_ROOT}/include/qneuron.hpp \
+           $${QSPIKE_ROOT}/include/QSynapse \
+           $${QSPIKE_ROOT}/include/qsynapse.hpp \
+           $${QSPIKE_ROOT}/include/QClock \
+           $${QSPIKE_ROOT}/include/qclock.hpp
+
+

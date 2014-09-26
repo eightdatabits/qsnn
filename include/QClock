@@ -1,0 +1,12 @@
+/* -*- mode: C++; tab-width: 4 -*- */
+
+/**
+ * @file QClock
+ *
+ * @brief An alias header file which includes the QClock class from qclock.hpp.
+ *
+ * @author      Liam Bucci
+ * @date        7/24/2013
+ */
+
+#include <qclock.hpp>

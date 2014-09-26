@@ -1,0 +1,13 @@
+/* -*- mode: C++; tab-width: 4; -*- */
+
+/**
+ * @file QSynapse
+ *
+ * @brief This file is an alias include file for qsynapse.hpp.
+ *
+ * @author      Liam Bucci
+ * @date        7/21/2013
+ */
+
+// Include qsynapse.hpp
+#include <qsynapse.hpp>
